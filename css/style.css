@@ -1,1 +1,94 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800;900&display=swap');
+body{
+	margin: 0;
+	line-height: 1.5;
+}
+body,
+input,
+textarea,
+button{
+	font-family: 'Raleway', sans-serif;
+	font-weight: 400;
+}
+*{
+	box-sizing: border-box;
+	margin: 0;
+}
+.container{
+	max-width: 1170px;
+	margin: auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+.align-items-center{
+	align-items: center;
+}
+.justify-content-between{
+	justify-content: center;
+}
+/*header*/
+.header{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	z-index: 99;
+}
+.header .brand-name{
+	padding: 0 15px;
+}
+.header .brand-name a{
+	text-decoration: none;
+	font-size: 30px;
+	color: #ffffff;
+	text-transform: uppercase;
+	font-weight: 900;
+	letter-spacing: 2px;
+}
+.header .nav{
+	padding: 0 15px;
+}
+.header .nav ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.header .nav ul li{
+	display: inline-block;
+	margin-left: 30px;
+}
+.header .nav ul li a{
+	text-decoration: none;
+	font-size: 16px;
+	font-weight: 600;
+	color: #ffffff;
+	padding: 25px;
+	display: block;
+	transition: all 0.5s ease;
+}
+.header .nav ul li a:hover{
+	color: #FF9800;
+}
+
+/* home section*/
+.home-section{
+	min-height: 100vh;
+	background-image: url('../img/about.jpg');
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	z-index: 1;
+}
+.home-section:before{
+	content: '';
+	position: absolute;
+	box-sizing: border-box;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #000000;
+	opacity: 0.5;
+	z-index: -1;
